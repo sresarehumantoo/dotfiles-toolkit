@@ -1,0 +1,309 @@
+{
+  "version": 1,
+  "tools": [
+    {
+      "name": "nmap",
+      "description": "Network exploration & port scanning",
+      "category": "Recon & Scanning",
+      "method": "apt",
+      "package": "nmap",
+      "binary": "nmap"
+    },
+    {
+      "name": "masscan",
+      "description": "High-speed port scanner",
+      "category": "Recon & Scanning",
+      "method": "apt",
+      "package": "masscan",
+      "binary": "masscan"
+    },
+    {
+      "name": "rustscan",
+      "description": "Fast port scanner (cargo)",
+      "category": "Recon & Scanning",
+      "method": "cargo",
+      "package": "rustscan",
+      "binary": "rustscan"
+    },
+    {
+      "name": "gobuster",
+      "description": "Directory/DNS/vhost brute-forcer (go)",
+      "category": "Web Testing",
+      "method": "go",
+      "package": "github.com/OJ/gobuster/v3@latest",
+      "binary": "gobuster"
+    },
+    {
+      "name": "ffuf",
+      "description": "Fast web fuzzer (go)",
+      "category": "Web Testing",
+      "method": "go",
+      "package": "github.com/ffuf/ffuf/v2@latest",
+      "binary": "ffuf"
+    },
+    {
+      "name": "feroxbuster",
+      "description": "Recursive content discovery (cargo)",
+      "category": "Web Testing",
+      "method": "cargo",
+      "package": "feroxbuster",
+      "binary": "feroxbuster"
+    },
+    {
+      "name": "nikto",
+      "description": "Web server vulnerability scanner",
+      "category": "Web Testing",
+      "method": "apt",
+      "package": "nikto",
+      "binary": "nikto"
+    },
+    {
+      "name": "sqlmap",
+      "description": "Automatic SQL injection tool",
+      "category": "Web Testing",
+      "method": "apt",
+      "package": "sqlmap",
+      "binary": "sqlmap"
+    },
+    {
+      "name": "dirb",
+      "description": "Web content scanner",
+      "category": "Web Testing",
+      "method": "apt",
+      "package": "dirb",
+      "binary": "dirb"
+    },
+    {
+      "name": "john",
+      "description": "John the Ripper password cracker",
+      "category": "Password Cracking",
+      "method": "apt",
+      "package": "john",
+      "binary": "john"
+    },
+    {
+      "name": "hashcat",
+      "description": "Advanced password recovery",
+      "category": "Password Cracking",
+      "method": "apt",
+      "package": "hashcat",
+      "binary": "hashcat"
+    },
+    {
+      "name": "hydra",
+      "description": "Network login brute-forcer",
+      "category": "Password Cracking",
+      "method": "apt",
+      "package": "hydra",
+      "binary": "hydra"
+    },
+    {
+      "name": "socat",
+      "description": "Multipurpose relay for bidirectional data",
+      "category": "Network Tools",
+      "method": "apt",
+      "package": "socat",
+      "binary": "socat"
+    },
+    {
+      "name": "proxychains",
+      "description": "TCP connections through proxy chains",
+      "category": "Network Tools",
+      "method": "apt",
+      "package": "proxychains4",
+      "binary": "proxychains4"
+    },
+    {
+      "name": "tshark",
+      "description": "Network protocol analyzer (CLI)",
+      "category": "Network Tools",
+      "method": "apt",
+      "package": "tshark",
+      "binary": "tshark"
+    },
+    {
+      "name": "tcpdump",
+      "description": "Packet capture and analysis",
+      "category": "Network Tools",
+      "method": "apt",
+      "package": "tcpdump",
+      "binary": "tcpdump"
+    },
+    {
+      "name": "ncat",
+      "description": "Nmap's netcat replacement",
+      "category": "Network Tools",
+      "method": "apt",
+      "package": "ncat",
+      "binary": "ncat"
+    },
+    {
+      "name": "chisel",
+      "description": "TCP/UDP tunnel over HTTP (go)",
+      "category": "Network Tools",
+      "method": "go",
+      "package": "github.com/jpillora/chisel@latest",
+      "binary": "chisel"
+    },
+    {
+      "name": "binwalk",
+      "description": "Firmware analysis & extraction",
+      "category": "Forensics & Stego",
+      "method": "apt",
+      "package": "binwalk",
+      "binary": "binwalk"
+    },
+    {
+      "name": "steghide",
+      "description": "Steganography tool for hiding data",
+      "category": "Forensics & Stego",
+      "method": "apt",
+      "package": "steghide",
+      "binary": "steghide"
+    },
+    {
+      "name": "exiftool",
+      "description": "Read/write file metadata",
+      "category": "Forensics & Stego",
+      "method": "apt",
+      "package": "libimage-exiftool-perl",
+      "binary": "exiftool"
+    },
+    {
+      "name": "foremost",
+      "description": "File carving & recovery",
+      "category": "Forensics & Stego",
+      "method": "apt",
+      "package": "foremost",
+      "binary": "foremost"
+    },
+    {
+      "name": "gdb",
+      "description": "GNU debugger",
+      "category": "Reverse Engineering",
+      "method": "apt",
+      "package": "gdb",
+      "binary": "gdb"
+    },
+    {
+      "name": "radare2",
+      "description": "Reverse engineering framework",
+      "category": "Reverse Engineering",
+      "method": "apt",
+      "package": "radare2",
+      "binary": "r2"
+    },
+    {
+      "name": "pwntools",
+      "description": "CTF & exploit development library (pipx)",
+      "category": "Reverse Engineering",
+      "method": "pipx",
+      "package": "pwntools",
+      "binary": "pwn"
+    },
+    {
+      "name": "pwndbg",
+      "description": "GDB plugin for exploit development & reverse engineering",
+      "category": "Reverse Engineering",
+      "method": "git_clone",
+      "binary": "pwndbg",
+      "git_repo": "https://github.com/pwndbg/pwndbg.git"
+    },
+    {
+      "name": "gef",
+      "description": "GDB Enhanced Features — multi-architecture exploit assistant",
+      "category": "Reverse Engineering",
+      "method": "git_clone",
+      "binary": "gef",
+      "git_repo": "https://github.com/hugsy/gef.git"
+    },
+    {
+      "name": "peda",
+      "description": "Python Exploit Development Assistance for GDB",
+      "category": "Reverse Engineering",
+      "method": "git_clone",
+      "binary": "peda",
+      "git_repo": "https://github.com/longld/peda.git"
+    },
+    {
+      "name": "bloodhound",
+      "description": "AD attack path mapper — Python ingestor (pipx)",
+      "category": "Active Directory",
+      "method": "pipx",
+      "package": "bloodhound",
+      "binary": "bloodhound-python"
+    },
+    {
+      "name": "netexec",
+      "description": "Network service exploitation — CrackMapExec successor (pipx from source)",
+      "category": "Active Directory",
+      "method": "pipx",
+      "package": "git+https://github.com/Pennyw0rth/NetExec",
+      "binary": "nxc"
+    },
+    {
+      "name": "impacket",
+      "description": "Windows protocol tools — secretsdump, psexec, etc. (pipx)",
+      "category": "Active Directory",
+      "method": "pipx",
+      "package": "impacket",
+      "binary": "impacket-smbclient"
+    },
+    {
+      "name": "powersploit",
+      "description": "PowerShell post-exploitation framework (git clone)",
+      "category": "Post-Exploitation",
+      "method": "git_clone",
+      "binary": "powersploit",
+      "git_repo": "https://github.com/PowerShellMafia/PowerSploit.git"
+    },
+    {
+      "name": "havoc",
+      "description": "C2 framework (git clone — requires manual build)",
+      "category": "Post-Exploitation",
+      "method": "git_clone",
+      "binary": "havoc",
+      "git_repo": "https://github.com/HavocFramework/Havoc.git"
+    },
+    {
+      "name": "seclists",
+      "description": "Discovery/fuzzing/payload wordlists (git clone)",
+      "category": "Wordlists",
+      "method": "git_clone",
+      "binary": "seclists",
+      "git_repo": "https://github.com/danielmiessler/SecLists.git"
+    },
+    {
+      "name": "cmake",
+      "description": "Cross-platform build system",
+      "category": "Development",
+      "method": "apt",
+      "package": "cmake",
+      "binary": "cmake"
+    },
+    {
+      "name": "openssh-server",
+      "description": "SSH server for remote access",
+      "category": "Development",
+      "method": "apt",
+      "package": "openssh-server",
+      "binary": "sshd"
+    },
+    {
+      "name": "neovim",
+      "description": "Hyperextensible text editor — latest release (AppImage)",
+      "category": "Development",
+      "method": "appimage",
+      "binary": "nvim",
+      "app_repo": "neovim/neovim"
+    },
+    {
+      "name": "obsidian",
+      "description": "Knowledge base & note-taking (AppImage)",
+      "category": "Applications",
+      "method": "appimage",
+      "binary": "obsidian",
+      "app_repo": "obsidianmd/obsidian-releases"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+name: Validate registry
+
+on:
+  pull_request:
+    paths:
+      - registry.json
+      - .github/workflows/validate.yml
+  push:
+    branches: [main]
+    paths:
+      - registry.json
+      - .github/workflows/validate.yml
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout toolkit
+        uses: actions/checkout@v4
+
+      - name: Checkout dotfiles (for dfinstall)
+        uses: actions/checkout@v4
+        with:
+          repository: sresarehumantoo/dotfiles
+          path: .dotfiles
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: .dotfiles/go.mod
+          cache-dependency-path: .dotfiles/go.sum
+
+      - name: Build dfinstall
+        run: |
+          cd .dotfiles
+          go build -o ../dfinstall ./src/cmd/dfinstall
+
+      - name: Validate registry.json
+        run: ./dfinstall registry validate ./registry.json

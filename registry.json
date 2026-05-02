@@ -47,7 +47,7 @@
       "category": "Browsers",
       "method": "apt",
       "package": "firefox-esr",
-      "binary": "firefox"
+      "binary": "firefox-esr"
     },
     {
       "name": "cmake",
@@ -56,14 +56,6 @@
       "method": "apt",
       "package": "cmake",
       "binary": "cmake"
-    },
-    {
-      "name": "neovim",
-      "description": "Hyperextensible text editor — latest release (AppImage)",
-      "category": "Development",
-      "method": "appimage",
-      "binary": "nvim",
-      "app_repo": "neovim/neovim"
     },
     {
       "name": "openssh-server",
@@ -352,6 +344,15 @@
       "method": "apt",
       "package": "doas",
       "binary": "doas"
+    },
+    {
+      "name": "ghostty",
+      "description": "Fast GPU-accelerated terminal emulator",
+      "category": "Terminal Emulators",
+      "method": "deb",
+      "binary": "ghostty",
+      "deb_repo": "dariogriffo/ghostty-debian",
+      "distros": ["debian"]
     },
     {
       "name": "dirb",

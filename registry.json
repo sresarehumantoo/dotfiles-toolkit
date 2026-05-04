@@ -74,6 +74,53 @@
       "binary": "ansible"
     },
     {
+      "name": "rustup",
+      "description": "Rust toolchain installer (rustc, cargo, rustfmt, clippy) — latest stable",
+      "category": "Languages",
+      "method": "rustup",
+      "binary": "rustup"
+    },
+    {
+      "name": "python3-full",
+      "description": "Full Python 3 (interpreter + venv + pip + dev headers)",
+      "category": "Languages",
+      "method": "apt",
+      "package": "python3-full",
+      "binary": "python3"
+    },
+    {
+      "name": "golang",
+      "description": "Go programming language toolchain (apt — older but stable)",
+      "category": "Languages",
+      "method": "apt",
+      "package": "golang",
+      "binary": "go"
+    },
+    {
+      "name": "default-jdk",
+      "description": "Default Java Development Kit",
+      "category": "Languages",
+      "method": "apt",
+      "package": "default-jdk",
+      "binary": "javac"
+    },
+    {
+      "name": "nodejs",
+      "description": "Node.js JavaScript runtime + npm (apt)",
+      "category": "Languages",
+      "method": "apt",
+      "package": "nodejs",
+      "binary": "node"
+    },
+    {
+      "name": "ruby-full",
+      "description": "Ruby with documentation, dev headers, and standard library",
+      "category": "Languages",
+      "method": "apt",
+      "package": "ruby-full",
+      "binary": "ruby"
+    },
+    {
       "name": "chainsaw",
       "description": "Windows Event Log analyzer (git clone — requires cargo build)",
       "category": "DFIR",

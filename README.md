@@ -29,7 +29,7 @@ The registry is cached locally at `~/.local/share/dfinstall/toolkit-registry.jso
       "name": "toolname",
       "description": "What the tool does",
       "category": "Category Name",
-      "method": "apt|go|pipx|cargo|git_clone|appimage|deb|release_binary",
+      "method": "apt|go|pipx|cargo|git_clone|appimage|deb|release_binary|rustup",
       "package": "package-name",
       "binary": "binary-to-check",
       "app_repo": "owner/repo",
@@ -72,6 +72,7 @@ The registry is cached locally at `~/.local/share/dfinstall/toolkit-registry.jso
 | `appimage` | Download from GitHub releases to `~/.local/bin/<binary>.AppImage` | File exists |
 | `deb` | Download `.deb` asset from latest GitHub release, install via `dpkg -i` | Binary in `$PATH` |
 | `release_binary` | Download asset from latest GitHub release, extract binary if tarball, place at `~/.local/bin/<binary>` | File exists |
+| `rustup` | Run the official rustup installer (`curl https://sh.rustup.rs \| sh -s -- -y --default-toolchain stable`); installs rustc, cargo, rustfmt, clippy under `~/.cargo/bin/` | `~/.cargo/bin/rustup` exists |
 
 ## Adding a Tool
 
@@ -91,6 +92,7 @@ The registry is cached locally at `~/.local/share/dfinstall/toolkit-registry.jso
 | DevOps | Configuration management, automation, infra tooling |
 | DFIR | Digital forensics & incident response |
 | Forensics & Stego | File analysis, steganography |
+| Languages | Programming language runtimes & toolchains (Rust, Python, Go, JDK, Node.js, Ruby) |
 | Network Tools | Proxying, tunneling, packet capture |
 | Office | Productivity & document tooling |
 | Password Cracking | Hash crackers, brute-force tools |

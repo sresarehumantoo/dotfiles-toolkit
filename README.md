@@ -37,7 +37,8 @@ The registry is cached locally at `~/.local/share/dfinstall/toolkit-registry.jso
       "deb_repo": "owner/repo",
       "release_repo": "owner/repo",
       "asset_pattern": "linux",
-      "distros": ["debian", "arch", "fedora"]
+      "distros": ["debian", "arch", "fedora"],
+      "brew": "formula-name"
     }
   ]
 }
@@ -59,6 +60,7 @@ The registry is cached locally at `~/.local/share/dfinstall/toolkit-registry.jso
 | `release_repo` | release_binary | GitHub `owner/repo` whose latest release publishes a binary or tarball |
 | `asset_pattern` | release_binary (optional) | Substring filter for picking the right release asset (e.g. `"linux-musl"`, `"gnu"`); arch tokens like `x86_64`/`arm64` are matched automatically |
 | `distros` | optional | Restrict to these distros: `debian`, `arch`, `fedora`. Omit to allow all. |
+| `brew` | optional | Homebrew formula to install on macOS instead of `method`, so one entry serves both platforms. It must put `binary` on `$PATH`: casks and keg-only formulae don't. On macOS, `apt`, `deb` and `appimage` tools without it are not offered. |
 
 ### Install Methods
 
@@ -73,6 +75,9 @@ The registry is cached locally at `~/.local/share/dfinstall/toolkit-registry.jso
 | `deb` | Download `.deb` asset from latest GitHub release, install via `dpkg -i` | Binary in `$PATH` |
 | `release_binary` | Download asset from latest GitHub release, extract binary if tarball, place at `~/.local/bin/<binary>` | File exists |
 | `rustup` | Run the official rustup installer (`curl https://sh.rustup.rs \| sh -s -- -y --default-toolchain stable`); installs rustc, cargo, rustfmt, clippy under `~/.cargo/bin/` | `~/.cargo/bin/rustup` exists |
+
+> [!WARNING]
+> dfinstall also understands a `brew` method and a `macos` distro filter for macOS-only tools, but builds that predate macOS support reject a registry containing either, and with it every tool. Use them only once every machine runs a dfinstall with macOS support. The `brew` field is safe at any time, because older builds ignore unknown fields.
 
 ## Adding a Tool
 

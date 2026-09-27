@@ -55,6 +55,7 @@
       "category": "Development",
       "method": "apt",
       "package": "cmake",
+      "brew": "cmake",
       "binary": "cmake"
     },
     {
@@ -86,6 +87,7 @@
       "category": "Languages",
       "method": "apt",
       "package": "python3-full",
+      "brew": "python3",
       "binary": "python3"
     },
     {
@@ -94,6 +96,7 @@
       "category": "Languages",
       "method": "apt",
       "package": "golang",
+      "brew": "go",
       "binary": "go"
     },
     {
@@ -110,6 +113,7 @@
       "category": "Languages",
       "method": "apt",
       "package": "nodejs",
+      "brew": "node",
       "binary": "node"
     },
     {
@@ -118,6 +122,7 @@
       "category": "Languages",
       "method": "apt",
       "package": "ruby-full",
+      "brew": "ruby",
       "binary": "ruby"
     },
     {
@@ -134,6 +139,7 @@
       "category": "DFIR",
       "method": "apt",
       "package": "jq",
+      "brew": "jq",
       "binary": "jq"
     },
     {
@@ -150,6 +156,7 @@
       "category": "DFIR",
       "method": "apt",
       "package": "sleuthkit",
+      "brew": "sleuthkit",
       "binary": "fls"
     },
     {
@@ -174,6 +181,7 @@
       "category": "DFIR",
       "method": "apt",
       "package": "yara",
+      "brew": "yara",
       "binary": "yara"
     },
     {
@@ -182,6 +190,7 @@
       "category": "Forensics & Stego",
       "method": "apt",
       "package": "binwalk",
+      "brew": "binwalk",
       "binary": "binwalk"
     },
     {
@@ -190,6 +199,7 @@
       "category": "Forensics & Stego",
       "method": "apt",
       "package": "libimage-exiftool-perl",
+      "brew": "exiftool",
       "binary": "exiftool"
     },
     {
@@ -198,6 +208,7 @@
       "category": "Forensics & Stego",
       "method": "apt",
       "package": "foremost",
+      "brew": "foremost",
       "binary": "foremost"
     },
     {
@@ -222,6 +233,7 @@
       "category": "Network Tools",
       "method": "apt",
       "package": "ncat",
+      "brew": "nmap",
       "binary": "ncat"
     },
     {
@@ -230,6 +242,7 @@
       "category": "Network Tools",
       "method": "apt",
       "package": "proxychains4",
+      "brew": "proxychains-ng",
       "binary": "proxychains4"
     },
     {
@@ -238,6 +251,7 @@
       "category": "Network Tools",
       "method": "apt",
       "package": "socat",
+      "brew": "socat",
       "binary": "socat"
     },
     {
@@ -246,6 +260,7 @@
       "category": "Network Tools",
       "method": "apt",
       "package": "tcpdump",
+      "brew": "tcpdump",
       "binary": "tcpdump"
     },
     {
@@ -254,6 +269,7 @@
       "category": "Network Tools",
       "method": "apt",
       "package": "tshark",
+      "brew": "wireshark",
       "binary": "tshark"
     },
     {
@@ -270,6 +286,7 @@
       "category": "Password Cracking",
       "method": "apt",
       "package": "hashcat",
+      "brew": "hashcat",
       "binary": "hashcat"
     },
     {
@@ -278,6 +295,7 @@
       "category": "Password Cracking",
       "method": "apt",
       "package": "hydra",
+      "brew": "hydra",
       "binary": "hydra"
     },
     {
@@ -286,6 +304,7 @@
       "category": "Password Cracking",
       "method": "apt",
       "package": "john",
+      "brew": "john",
       "binary": "john"
     },
     {
@@ -310,6 +329,7 @@
       "category": "Recon & Scanning",
       "method": "apt",
       "package": "masscan",
+      "brew": "masscan",
       "binary": "masscan"
     },
     {
@@ -318,6 +338,7 @@
       "category": "Recon & Scanning",
       "method": "apt",
       "package": "nmap",
+      "brew": "nmap",
       "binary": "nmap"
     },
     {
@@ -334,6 +355,7 @@
       "category": "Reverse Engineering",
       "method": "apt",
       "package": "gdb",
+      "brew": "gdb",
       "binary": "gdb"
     },
     {
@@ -382,6 +404,7 @@
       "category": "Reverse Engineering",
       "method": "apt",
       "package": "radare2",
+      "brew": "radare2",
       "binary": "r2"
     },
     {
@@ -439,6 +462,7 @@
       "category": "Web Testing",
       "method": "apt",
       "package": "nikto",
+      "brew": "nikto",
       "binary": "nikto"
     },
     {
@@ -447,6 +471,7 @@
       "category": "Web Testing",
       "method": "apt",
       "package": "sqlmap",
+      "brew": "sqlmap",
       "binary": "sqlmap"
     },
     {
